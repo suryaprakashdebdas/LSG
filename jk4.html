@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LSG APP DOWNLOAD</title>
+	<style>
+		body {
+			background-color: #f1f1f1;
+			font-family: Arial, sans-serif;
+		}
+
+		h1 {
+			color: #336699;
+			text-align: center;
+			margin-top: 50px;
+		}
+
+		.container {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 0 auto;
+			padding: 30px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			color: #666;
+		}
+
+		input[type="text"] {
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+			width: 100%;
+			margin-bottom: 20px;
+		}
+
+		input[type="submit"] {
+			background-color: #336699;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #1c4f74;
+		}
+
+		@media only screen and (max-width: 600px) {
+			.container {
+				max-width: 100%;
+				padding: 20px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			<input type="button" value="Login" onclick="showDownload()">
+		</form>
+	</div>
+	<div id="download" style="display:none;">
+		<h1>LSG APP DOWNLOAD</h1>
+		<div class="container">
+			<p>This is the website for downloading LSG App.</p>
+			<button onclick="window.location.href='https://mega.nz/file/jAxhFQKb#IKY5Epyf8f03oDSGZPxYtx2798BQnI9nnzd-A4qST0'">Link to download</button>
+		</div>
+	</div>
+	<script>
+		function showDownload() {
+			var name = document.getElementById("name").value;
+			if (name.trim() === "") {
+				alert("Please enter your name!");
+			} else {
+				document.getElementById("download").style.display = "block";
+			}
+		}
+	</script>
+</body>
+</html>
