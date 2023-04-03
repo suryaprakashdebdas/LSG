@@ -1,88 +1,55 @@
-<!DOCTYPE html>
+
+			<!DOCTYPE html>
 <html>
 <head>
-	<title>LSG APP DOWNLOAD</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MADE BY LSG (CBSE CLASS 10TH 2023-24 SYLLABUS)</title>
 	<style>
 		body {
 			background-color: #f1f1f1;
 			font-family: Arial, sans-serif;
-		}
-
-		h1 {
-			color: #336699;
 			text-align: center;
-			margin-top: 50px;
+			margin: 0;
+			padding: 0;
 		}
-
-		.container {
-			background-color: #fff;
-			max-width: 500px;
-			margin: 0 auto;
-			padding: 30px;
-			border-radius: 10px;
-			box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+		h1 {
+			color: #333333;
+			margin-top: 20px;
 		}
-
-		label {
+		button {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
 			display: block;
-			margin-bottom: 10px;
-			color: #666;
-		}
-
-		input[type="text"] {
-			padding: 10px;
-			border-radius: 5px;
-			border: none;
-			box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
-			width: 100%;
-			margin-bottom: 20px;
-		}
-
-		input[type="submit"] {
-			background-color: #336699;
-			color: #fff;
-			padding: 10px 20px;
-			border: none;
-			border-radius: 5px;
+			font-size: 16px;
+			margin: 10px auto;
 			cursor: pointer;
+			border-radius: 10px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			width: 80%;
+			max-width: 400px;
 		}
-
-		input[type="submit"]:hover {
-			background-color: #1c4f74;
-		}
-
-		@media only screen and (max-width: 600px) {
-			.container {
-				max-width: 100%;
-				padding: 20px;
-			}
+		button:hover {
+			background-color: #3e8e41;
 		}
 	</style>
 </head>
 <body>
-	<div class="container">
-		<form>
-			<label for="name">Name:</label>
-			<input type="text" id="name" name="name" required>
-			<input type="button" value="Login" onclick="showDownload()">
-		</form>
-	</div>
-	<div id="download" style="display:none;">
-		<h1>LSG APP DOWNLOAD</h1>
-		<div class="container">
-			<p>This is the website for downloading LSG App.</p>
-			<button onclick="window.location.href='https://mega.nz/file/jAxhFQKb#IKY5Epyf8f03oDSGZPxYtx2798BQnI9nnzd-A4qST0'">Link to download</button>
-		</div>
-	</div>
-	<script>
-		function showDownload() {
-			var name = document.getElementById("name").value;
-			if (name.trim() === "") {
-				alert("Please enter your name!");
-			} else {
-				document.getElementById("download").style.display = "block";
-			}
-		}
-	</script>
+	<h1>CBSE 2023-24 LINKS</h1>
+
+	<button onclick="location.href='https://cbseacademic.nic.in//web_material/CurriculumMain24/Sec/Maths_Sec_2023-24.pdf'">Math</button>
+
+	<button onclick="location.href='https://cbseacademic.nic.in//web_material/CurriculumMain24/Sec/Science_Sec_2023-24.pdf'">Science</button>
+
+	<button onclick="location.href='https://cbseacademic.nic.in//web_material/CurriculumMain24/Sec/Social_Science_Sec_2023-24.pdf'">Social Science</button>
+
+	<button onclick="location.href='https://cbseacademic.nic.in//web_material/CurriculumMain24/Sec/English_LL_2023-24.pdf'">English</button>
+
+	<button onclick="location.href='https://cbseacademic.nic.in//web_material/CurriculumMain24/Sec/Hindi_B_Sec_2023-24.pdf'">Hindi</button>
+
+	<button onclick="location.href='https://cbseacademic.nic.in//web_material/CurriculumMain24/Sec/Odia_Sec_2023-24.pdf'">Odia</button>
 </body>
 </html>
